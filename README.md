@@ -1,8 +1,10 @@
 # Matplotlib analysis
-- Create visual charts with Matplotlib
+##  Create visual charts with Matplotlib
 
-The purpose of this study was to compare the performance of Pymaceuticals' drug of interest vs the other treatment regimens.
+- The purpose of this study was to compare the performance of Pymaceuticals' drug of interest vs the other treatment regimens.
 
+## Data Visualizations:
+(![image](https://user-images.githubusercontent.com/81592631/138198572-1a685cd8-3e27-457f-9479-4d66204610ad.png)
 
 
 Sample Drug Quartiles
