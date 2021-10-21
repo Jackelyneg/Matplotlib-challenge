@@ -6,47 +6,28 @@
 ## Data Visualizations:
 <img src="https://user-images.githubusercontent.com/81592631/138198572-1a685cd8-3e27-457f-9479-4d66204610ad.png" width="500" height="300">
 
+<img src="https://user-images.githubusercontent.com/81592631/138198843-20f38816-eed1-4063-887c-a23ec1572a1f.png" width="500" height="300">
+
+<img src="https://user-images.githubusercontent.com/81592631/138198893-dba6167c-c6b5-4dbd-b94c-cce8a9c86b86.png" width="500" height="300">
+
 
 Sample Drug Quartiles
 
 
-- Tools used:
-pandas
-matplotlib.pyplot
-scipy.stats
-numpy
-sklearn
+### Tools used:
+- Pandas
+- matplotlib.pyplot
+- scipy.stats
+- numpy
+- sklearn
 
-
-
-#####For Loops: cols = []
-count = 1
-for column in new_df.columns:
-            if column == "Tumor Volume (mm3)":
-                        cols.append(f"Tumor Volume (mm3)_{count}")
-                         count+=1
-                        continue
-            cols.append(column)
-new_df.columns = cols
-
-#####Groupbys:
-
-mouse_group = cleaned_df.groupby("Mouse ID")
-max_timepoint = mouse_group["Timepoint"].max()
-max_timepoint_df = max_timepoint.to_frame().reset_index()
-new_df = pd.merge(max_timepoint_df,
-            cleaned_df, on=["Mouse ID","Timepoint"])
-            [["Drug Regimen", "Tumor Volume (mm3)"]]
-
-#####and many others!:
 
 Observations
-The Drug Regimen Ramicane produced the smallest average tumor sizes overall (40.22)
-The Drug Regimen Ketapril produced the largest average tumor sizes overall (55.24)
-The Drug Ketapril also had the highest variance of results (68.55)
-Infubinol had one giant outlier in the quartile box plot data
-For Capomulin, the longer the mouse was on the drug - the more the tumor was reduced
-There is a corelation to the size in volume to the weight of the mouse - the bigger the mouse, the bigger the tumor.
-Status
+
+- Based on the bar graph, there were more mice tested on Ramicane and Capomulin
+
+- Based on the pie chart, there i a higher percentage of male mice than female mice that were used in this study
+
+- Based on the correlation coefficient between Weight and Tumor volume, we can state that the correlation is high. A number close to 1.0 shows a high strength in a relationship between the two variables. Here we see a positive correlation between the two variables. As weight increases so does the Average tumor volume.
 
 
