@@ -4,7 +4,7 @@
 - The purpose of this study was to compare the performance of Pymaceuticals' drug of interest vs the other treatment regimens.
 
 ## Data Visualizations:
-(![image](https://user-images.githubusercontent.com/81592631/138198572-1a685cd8-3e27-457f-9479-4d66204610ad.png)
+<img src="https://user-images.githubusercontent.com/81592631/138198572-1a685cd8-3e27-457f-9479-4d66204610ad.png" width="500" height="300">
 
 
 Sample Drug Quartiles
